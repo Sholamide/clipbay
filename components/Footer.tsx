@@ -24,6 +24,7 @@ const Footer = () => {
         <a
           className="text-red-600 hover:underline italic font-bold"
           target="_blank"
+          rel="noreferrer"
           href="https://twitter.com/lordolamider"
         >
           Lordie

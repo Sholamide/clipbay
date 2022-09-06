@@ -19,6 +19,16 @@ const Footer = () => {
       <p className="text-sm mt-5 text-gray-400">
         {new Date().getFullYear()} CLIPBAY
       </p>
+      <p className="text-sm mt-5 text-gray-400">
+        Built with ❤️ by{" "}
+        <a
+          className="text-red-600 hover:underline italic font-bold"
+          target="_blank"
+          href="https://twitter.com/lordolamider"
+        >
+          Lordie
+        </a>
+      </p>
     </div>
   );
 };

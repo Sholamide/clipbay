@@ -9,6 +9,7 @@ import NoResults from "../../components/NoResults";
 import VideoCard from "../../components/VideoCard";
 import useAuthStore from "../../store/authStore";
 import { IUser, Video } from "../../types";
+import { BASE_URL } from "../../utils";
 
 const Search = ({ videos }: { videos: Video[] }) => {
   const [isAccounts, setIsAccounts] = useState(false);
@@ -91,7 +92,7 @@ export const getServerSideProps = async ({
   params: { searchTerm: string };
 }) => {
   const response = await axios.get(
-    `http://localhost:3000/api/search/${searchTerm}`
+    `${BASE_URL}/api/search/${searchTerm}`
   );
   return {
     props: { videos: response.data },
